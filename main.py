@@ -6,7 +6,6 @@ def working_street_lights(road_length: int, not_working_street_lights: list[int]
     min_intensity_light = None
 
     working_lights = [i for i in range(road_length // 20 + 1) if i not in not_working_street_lights]
-    all_light = sorted(working_lights + not_working_street_lights)
 
     for i, light in enumerate(not_working_street_lights):
         closest_working_distance = float('inf')
